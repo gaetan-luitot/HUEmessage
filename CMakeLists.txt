@@ -9,16 +9,18 @@ set(SRCS
 	"./sources/pixel.cpp"
 	#"./sources/pixelRGB.cpp"
 	#"./sources/pixelTSL.cpp"
-	#"./sources/image.cpp"
+	"./sources/image.cpp"
 	#"./sources/hueDialoger.cpp"
+	"./sources/libPNG.cpp"
 )
 
 set(HDRS
 	"./headers/pixel.hpp"
 	#"./headers/pixelRGB.hpp"
 	#"./headers/pixelTSL.hpp"
-	#"./headers/image.hpp"
+	"./headers/image.hpp"
 	#"./headers/hueDialoger.hpp"
+	"./headers/libPNG.hpp"
 )
 
 add_executable(main ${HDRS} ${SRCS})
