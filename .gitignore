@@ -1,0 +1,6 @@
+# IDE
+.idea
+
+# Compil result
+cmake-build-debug/
+build/
