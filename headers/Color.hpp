@@ -24,6 +24,9 @@ class Color {
 	void fillHSV();
 	void fillRGB();
 
+	void validateRGBConfig();
+	void validateHSVConfig();
+
 public:
     // Constructor
 	Color(uint8_t _r = 0, uint8_t _g = 0, uint8_t _b = 0, float _a = 1);
@@ -41,6 +44,18 @@ public:
 	inline float getA() const { return a; }
 
 	// Modifier
+	void setR(uint8_t _r);
+	void setG(uint8_t _g);
+	void setB(uint8_t _b);
+
+	void setH(float _h);
+	void setS(float _s);
+	void setV(float _v);
+
+	inline void setA(float _a) { a = _a; validateRGBConfig(); }
+
+	void setRGB(uint8_t _r, uint8_t _g, uint8_t _b, float _a);
+	void setHSL(float _h, float _s, float _v, float _a);
 };
 
 
