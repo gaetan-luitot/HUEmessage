@@ -1,8 +1,14 @@
 #include <iostream>
-#include "../headers/pixel.hpp"
+#include "../headers/hueConverter.hpp"
+#include "../headers/image.hpp"
 
-int main(int argc, char** argv) {
-	Pixel<int> p = Pixel<int>(4);
+int main(int argc, char** argv)
+{
+	Image * img = new Image(10, 10);
+	img->clear(4);
+	img->pixel(0) = 10;
+	img->pixel(1) = 20;
+	HueConverter::imgToMsg(img);
 
-	std::cout << p.value() << std::endl;
+	delete img;
 }
