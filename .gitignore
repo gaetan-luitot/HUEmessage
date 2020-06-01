@@ -1,5 +1,7 @@
 # IDE
 .idea
+.cproject
+.project
 
 # Compil result
 cmake-build-debug/
