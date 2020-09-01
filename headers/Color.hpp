@@ -14,12 +14,13 @@
 
 class Color {
     static const float RGB2TSL[];
+
+  // RGB
+  uint8_t r, g, b;
 	// HSV
-	float h, s, v;
+	float h, s, l;
 	// Transparency
 	float a;
-	// RGG
-	uint8_t r, g, b;
 
 	void fillHSV();
 	void fillRGB();
@@ -39,7 +40,7 @@ public:
 
 	inline float getH() const { return h; }
 	inline float getS() const { return s; }
-	inline float getV() const { return v; }
+	inline float getL() const { return l; }
 
 	inline float getA() const { return a; }
 
@@ -50,7 +51,7 @@ public:
 
 	void setH(float _h);
 	void setS(float _s);
-	void setV(float _v);
+	void setL(float _l);
 
 	inline void setA(float _a) { a = _a; validateRGBConfig(); }
 
