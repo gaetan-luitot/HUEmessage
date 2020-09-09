@@ -15,5 +15,5 @@ Image::Image(std::size_t _width, std::size_t _height) : array(nullptr), width(_w
 }
 
 Image::~Image() {
-	delete array;
+	delete[] array;
 }
