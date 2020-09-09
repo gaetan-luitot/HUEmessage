@@ -15,8 +15,8 @@
 class Color {
     static const float RGB2TSL[];
 
-  // RGB
-  uint8_t r, g, b;
+    // RGB
+    uint8_t r, g, b;
 	// HSV
 	float h, s, l;
 	// Transparency
@@ -29,8 +29,13 @@ class Color {
 	void validateHSVConfig();
 
 public:
-    // Constructor
+    /**
+     * RGB constructor
+     */
 	Color(uint8_t _r = 0, uint8_t _g = 0, uint8_t _b = 0, float _a = 1);
+	/**
+	 * HSL constructor
+	 */
 	Color(float _h, float _s, float _v, float _a = 1);
 
 	// Accessor.
@@ -55,8 +60,8 @@ public:
 
 	inline void setA(float _a) { a = _a; validateRGBConfig(); }
 
-	void setRGB(uint8_t _r, uint8_t _g, uint8_t _b, float _a);
-	void setHSL(float _h, float _s, float _v, float _a);
+	void setRGB(uint8_t _r, uint8_t _g, uint8_t _b, float _a = 1);
+	void setHSL(float _h, float _s, float _v, float _a = 1);
 };
 
 

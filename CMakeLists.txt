@@ -7,14 +7,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(SRCS
         #"./sources/main.cpp"
         #"./sources/pixel.cpp"
-        #"./sources/image.cpp"
+        "./sources/Image.cpp"
         "./sources/Color.cpp"
-        "sources/testColor.cpp"
+        "./tests/testImage.cpp"
 )
 
 set(HDRS
         #"./headers/pixel.hpp"
-        #"./headers/image.hpp"
+        "./headers/Image.hpp"
         "./headers/Color.hpp"
 )
 

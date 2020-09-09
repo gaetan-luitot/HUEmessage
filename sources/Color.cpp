@@ -51,7 +51,7 @@ Color::Color(float _h, float _s, float _l, float _a)
 }
 
 /**
- * Construct HSV represenation from RGB values.
+ * Construct HSV representation from RGB values.
  */
 void Color::fillHSV() {
     // Process rgb value between 0 and 1.
